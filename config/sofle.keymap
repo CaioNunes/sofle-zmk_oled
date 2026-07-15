@@ -44,7 +44,7 @@
 &kp ESC         &kp N1  &kp N2    &kp N3        &kp N4     &kp N5                                   &kp N6     &kp N7   &kp N8     &kp N9    &kp N0    &kp MINUS
 &kp TAB         &kp Q   &kp W     &kp E         &kp R      &kp T                                    &kp Y      &kp U    &kp I      &kp O     &kp P     &kp BSPC
 &kp LEFT_SHIFT  &kp A   &kp S     &kp D         &kp F      &kp G                                    &kp H      &kp J    &kp K      &kp L     &kp SEMI  &kp RSHIFT
-&kp LCTRL       &kp Z   &kp X     &kp C         &kp V      &kp B      &kp CAPS     &kp PRINTSCREEN  &kp N      &kp M    &kp COMMA  &kp DOT   &kp FSLH  &kp RCTRL
+&kp LCTRL       &kp Z   &kp X     &kp C         &kp V      &kp B      &tog 4       &kp PRINTSCREEN  &kp N      &kp M    &kp COMMA  &kp DOT   &kp FSLH  &kp RCTRL
                         &kp LGUI  &kp LEFT_ALT  &kp GRAVE  &mo LOWER  &kp SPACE    &kp SPACE        &mo RAISE  &kp SQT  &kp RALT   &kp RGUI
             >;
 
@@ -109,6 +109,16 @@
 &none              &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &none            &none            &none                                      &none  &none  &none  &none  &none  &none
 &none              &none            &none            &none            &none            &none            &rgb_ug RGB_TOG    &none  &none  &none  &none  &none  &none  &none
                                     &none            &none            &none            &none            &none              &none  &none  &none  &none  &none
+            >;
+        };
+
+        GrandChase {
+            bindings = <
+&kp ESCAPE      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                       &trans  &trans          &trans        &trans     &trans  &trans
+&trans          &trans        &trans        &trans        &trans        &trans                             &trans  &trans          &kp UP_ARROW  &trans     &trans  &kp BACKSPACE
+&kp LEFT_SHIFT  &kp A         &kp S         &kp D         &kp F         &kp G                              &trans  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &trans  &trans
+&kp LCTRL       &kp Z         &kp X         &kp C         &kp V         &kp B         &tog 0       &trans  &trans  &trans          &trans        &trans     &trans  &trans
+                              &kp LEFT_WIN  &kp LEFT_ALT  &kp V         &trans        &kp ENTER    &trans  &trans  &trans          &trans        &trans
             >;
         };
     };
